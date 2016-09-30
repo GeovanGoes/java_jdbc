@@ -297,7 +297,7 @@ public class Principal
 				String telefone = sc.nextLine();
 				pessoaAtualizada.setTelefone(telefone);
 				
-				System.out.println("Aniversário");
+				System.out.println("Aniversário dd/mm/aaaa");
 				String aniversarioText = sc.nextLine();
 				Date aniversarioData = UtilDados.stringToCalendar(aniversarioText).getTime();
 				pessoaAtualizada.setAniversario(aniversarioData);
@@ -319,7 +319,7 @@ public class Principal
 				String telefone = sc.nextLine();
 				pessoaAtualizada.setTelefone(telefone == null || telefone.equals("") ? pessoa.getTelefone() : telefone);
 				
-				System.out.println("Aniversário");
+				System.out.println("Aniversário dd/mm/aaaa");
 				String aniversarioText = sc.nextLine();
 				Date aniversarioData = aniversarioText == null || aniversarioText.equals("") ? pessoa.getAniversario() : UtilDados.stringToCalendar(aniversarioText).getTime();
 				pessoaAtualizada.setAniversario(aniversarioData);
